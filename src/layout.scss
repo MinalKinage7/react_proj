@@ -1,0 +1,24 @@
+@use 'responsive.scss' as *;
+.layout{
+ 
+ height: 100vh;
+ max-width: 1366px;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 20px;
+ padding: 20px;
+
+ @include lg{
+    background-color: coral;
+    max-width: 1080px;
+ }
+ @include md{
+    background-color: rgb(184, 184, 239);
+    max-width: 880px;
+ }
+ @include sm{
+    background-color: rgb(233, 182, 182);
+    max-width: 560px;
+ }
+
+}

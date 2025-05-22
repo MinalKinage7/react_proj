@@ -1,0 +1,66 @@
+@use '/src/responsive.scss' as *;
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+
+    a{
+        @include sm{
+            display: none;
+        }
+    }
+
+    .left{
+        flex:3;
+        display: flex;
+        align-items: center;
+        gap :50px;
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap:10px;
+
+            img{
+                width: 28px;
+            }
+
+            span{
+                @include md {
+                    display: none;
+                }
+                @include sm {
+                    display: initial;
+                }
+            }
+        }
+    }
+
+    .right{
+        flex: 2;
+        background-color: bisque;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 50px;
+
+        @include sm {
+            background-color: transparent;
+        }
+
+        .menuIcon{
+            display: none;
+
+            @include sm{
+                display: initial;
+                
+            }
+
+            img{
+                width: 40px;
+            }
+        }
+    }
+}
