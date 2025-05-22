@@ -5,7 +5,7 @@ function Navbar(){
         <nav>
           <div className="left">
             <a href="" className='logo'>
-            <img src="/src/assets/logo.png" alt="" />
+            <img src="/logo.png" alt="" />
             <span>RealEstate</span>
             </a>
             <a href="">Home</a>
@@ -16,7 +16,7 @@ function Navbar(){
           <a href="">Sign In</a>
           <a href="">Sign Up</a>
           <div className="menuIcon">
-          <img src="/src/assets/menu.png" alt="" />
+          <img src="/menu.png" alt="" />
           </div>
           </div>
         </nav>
